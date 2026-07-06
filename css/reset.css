@@ -1,0 +1,188 @@
+/* =====================================================
+   Project Forever
+   File: reset.css
+   Version: 0.1.0
+   Author: OpenAI + Syam
+===================================================== */
+
+/* ---------- CSS Reset ---------- */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ---------- Root ---------- */
+
+html{
+
+    scroll-behavior:smooth;
+
+    -webkit-text-size-adjust:100%;
+
+    text-size-adjust:100%;
+
+    font-size:16px;
+
+}
+
+/* ---------- Body ---------- */
+
+body{
+
+    min-height:100vh;
+
+    text-rendering:optimizeLegibility;
+
+    -webkit-font-smoothing:antialiased;
+
+    -moz-osx-font-smoothing:grayscale;
+
+    overflow-x:hidden;
+
+}
+
+/* ---------- Images ---------- */
+
+img,
+picture,
+video,
+canvas,
+svg{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+/* ---------- Forms ---------- */
+
+input,
+button,
+textarea,
+select{
+
+    font:inherit;
+
+    color:inherit;
+
+}
+
+/* ---------- Buttons ---------- */
+
+button{
+
+    background:none;
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+}
+
+/* ---------- Inputs ---------- */
+
+input,
+textarea{
+
+    outline:none;
+
+    border:none;
+
+    background:none;
+
+}
+
+/* ---------- Lists ---------- */
+
+ul,
+ol{
+
+    list-style:none;
+
+}
+
+/* ---------- Links ---------- */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* ---------- Tables ---------- */
+
+table{
+
+    border-collapse:collapse;
+
+    border-spacing:0;
+
+}
+
+/* ---------- Headings ---------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    font-weight:inherit;
+
+}
+
+/* ---------- Paragraph ---------- */
+
+p{
+
+    line-height:1.7;
+
+}
+
+/* ---------- Selection ---------- */
+
+::selection{
+
+    background:#C98A63;
+
+    color:#ffffff;
+
+}
+
+/* ---------- Scrollbar ---------- */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#F7F3EF;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#C98A63;
+
+    border-radius:100px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#B67753;
+
+}
