@@ -1,0 +1,406 @@
+/* =====================================================
+   Project Forever
+   File: animations.css
+   Version: 0.1.0
+===================================================== */
+
+/* =====================================================
+   KEYFRAMES
+===================================================== */
+
+@keyframes fadeUp {
+
+    from{
+        opacity:0;
+        transform:translateY(80px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes fadeDown {
+
+    from{
+        opacity:0;
+        transform:translateY(-80px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes fadeLeft {
+
+    from{
+        opacity:0;
+        transform:translateX(-100px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+@keyframes fadeRight {
+
+    from{
+        opacity:0;
+        transform:translateX(100px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+@keyframes zoomIn {
+
+    from{
+        opacity:0;
+        transform:scale(.8);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+@keyframes blurReveal {
+
+    from{
+
+        opacity:0;
+
+        filter:blur(25px);
+
+        transform:translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        filter:blur(0);
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes float {
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes heartbeat{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    25%{
+
+        transform:scale(1.15);
+
+    }
+
+    50%{
+
+        transform:scale(.95);
+
+    }
+
+    75%{
+
+        transform:scale(1.12);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+@keyframes scrollDown{
+
+    0%{
+
+        top:10px;
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        top:32px;
+
+        opacity:0;
+
+    }
+
+}
+
+@keyframes rotateSlow{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+@keyframes glow{
+
+    0%{
+
+        box-shadow:0 0 20px rgba(201,138,99,.25);
+
+    }
+
+    50%{
+
+        box-shadow:0 0 60px rgba(201,138,99,.45);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 20px rgba(201,138,99,.25);
+
+    }
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        opacity:.5;
+
+    }
+
+    50%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:.5;
+
+    }
+
+}
+
+@keyframes gradientMove{
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
+
+}
+
+/* =====================================================
+   READY CLASSES
+===================================================== */
+
+.fade-up{
+
+    animation:fadeUp .9s ease both;
+
+}
+
+.fade-down{
+
+    animation:fadeDown .9s ease both;
+
+}
+
+.fade-left{
+
+    animation:fadeLeft .9s ease both;
+
+}
+
+.fade-right{
+
+    animation:fadeRight .9s ease both;
+
+}
+
+.zoom-in{
+
+    animation:zoomIn 1s ease both;
+
+}
+
+.blur-reveal{
+
+    animation:blurReveal 1.2s ease both;
+
+}
+
+.float{
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+.heartbeat{
+
+    animation:heartbeat 1.6s infinite;
+
+}
+
+.rotate{
+
+    animation:rotateSlow 30s linear infinite;
+
+}
+
+.glow{
+
+    animation:glow 4s infinite;
+
+}
+
+.pulse{
+
+    animation:pulse 2s infinite;
+
+}
+
+/* =====================================================
+   INITIAL STATE FOR GSAP
+===================================================== */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(80px);
+
+}
+
+.reveal-left{
+
+    opacity:0;
+
+    transform:translateX(-100px);
+
+}
+
+.reveal-right{
+
+    opacity:0;
+
+    transform:translateX(100px);
+
+}
+
+.reveal-scale{
+
+    opacity:0;
+
+    transform:scale(.8);
+
+}
+
+/* =====================================================
+   IMAGE EFFECTS
+===================================================== */
+
+.image-hover{
+
+    overflow:hidden;
+
+}
+
+.image-hover img{
+
+    transition:transform .9s ease;
+
+}
+
+.image-hover:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* =====================================================
+   CURSOR TRANSITIONS
+===================================================== */
+
+button,
+a{
+
+    transition:all .35s ease;
+
+}
+
+img{
+
+    transition:transform .7s ease;
+
+}
