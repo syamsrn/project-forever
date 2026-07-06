@@ -553,3 +553,100 @@
     margin:auto;
 
 }
+
+
+/* =====================================================
+   FEATURE 01
+   CINEMATIC INTRO
+===================================================== */
+
+#intro{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#050505;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9000;
+
+}
+
+.intro-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        radial-gradient(circle at center,
+        rgba(255,255,255,.05),
+        transparent 60%);
+
+}
+
+.intro-content{
+
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.intro-heart{
+
+    font-size:5rem;
+
+    color:#D98A6A;
+
+    opacity:0;
+
+}
+
+.intro-name{
+
+    margin-top:25px;
+
+    font-size:4rem;
+
+    color:white;
+
+    opacity:0;
+
+}
+
+.intro-line{
+
+    margin-top:30px;
+
+    font-size:1.2rem;
+
+    letter-spacing:.04em;
+
+    color:#ddd;
+
+    opacity:0;
+
+}
+
+.intro-date{
+
+    margin-top:50px;
+
+    font-size:2rem;
+
+    color:#D98A6A;
+
+    opacity:0;
+
+}
