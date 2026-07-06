@@ -1,39 +1,117 @@
+// ======================================================
+// Project Forever
+// Global Configuration
+// Version: 1.0.0
+// ======================================================
+
 const CONFIG = {
 
-    names: {
-        you: "Syam",
+    app: {
+
+        title: "Project Forever",
+
+        version: "1.0.0",
+
+        author: "Syam"
+
+    },
+
+    couple: {
+
+        him: "Syam",
+
         her: "Jo",
-        couple: "Jo ❤️ Syam"
+
+        display: "Jo ❤️ Syam"
+
+    },
+
+    story: {
+
+        title: "One Glance",
+
+        subtitle: "Every beautiful story begins with one glance."
+
     },
 
     dates: {
 
-        firstSeen: "2025-05-08T19:30:00",
+        firstSeen: new Date("2025-05-08T19:30:00"),
 
-        relationship: "2025-07-19T00:00:00",
+        relationship: new Date("2025-07-19T00:00:00"),
 
-        firstSelfie: "2025-07-27T18:31:00",
+        firstSelfie: new Date("2025-07-27T18:31:00"),
 
-        firstILoveYou: "2025-10-09T00:00:00",
+        firstILoveYou: new Date("2025-10-09T00:00:00"),
 
-        birthday: "2025-11-20T00:00:00"
-
-    },
-
-    music:{
-
-        intro:"assets/music/piano.mp3"
+        birthday: new Date("2025-11-20T00:00:00")
 
     },
 
-    theme:{
+    music: {
 
-        primary:"#D98A6A",
+        intro: "/assets/music/piano.mp3",
 
-        background:"#FFF8F3",
+        ambient: "/assets/music/ambient.mp3",
 
-        dark:"#101010"
+        ending: "/assets/music/finale.mp3"
 
-    }
+    },
+
+    theme: {
+
+        primary: "#D98A6A",
+
+        secondary: "#F8EDE3",
+
+        accent: "#FFF6F0",
+
+        dark: "#111111",
+
+        light: "#FFFFFF"
+
+    },
+
+    images: {
+
+        hero: "/assets/images/hero/hero.jpeg",
+
+        intro: "/assets/images/intro/",
+
+        gallery: "/assets/images/gallery/",
+
+        trips: "/assets/images/trips/",
+
+        timeline: "/assets/images/timeline/"
+
+    },
+
+    chapters: [
+
+        "Intro",
+
+        "Question",
+
+        "Hero",
+
+        "Count Up",
+
+        "Timeline",
+
+        "Journey",
+
+        "Trips",
+
+        "Gallery",
+
+        "Letter",
+
+        "Moon",
+
+        "Ending"
+
+    ]
 
 };
+
+export default CONFIG;
