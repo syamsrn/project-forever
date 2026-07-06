@@ -1,0 +1,333 @@
+/* =====================================================
+   Project Forever
+   File: layout.css
+   Version: 0.1.0
+===================================================== */
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body{
+
+    background:var(--color-background);
+
+    color:var(--color-text);
+
+    overflow-x:hidden;
+
+}
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+section{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:100vh;
+
+    padding:var(--space-10) 0;
+
+}
+
+/* =====================================================
+   CONTAINERS
+===================================================== */
+
+.container{
+
+    width:min(92%, var(--container-lg));
+
+    margin-inline:auto;
+
+}
+
+.container-sm{
+
+    width:min(92%, var(--container-sm));
+
+    margin-inline:auto;
+
+}
+
+.container-xl{
+
+    width:min(94%, var(--container-xl));
+
+    margin-inline:auto;
+
+}
+
+/* =====================================================
+   FLEX UTILITIES
+===================================================== */
+
+.flex{
+
+    display:flex;
+
+}
+
+.flex-center{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.flex-between{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.flex-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.grid{
+
+    display:grid;
+
+    gap:var(--space-6);
+
+}
+
+.grid-2{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:var(--space-7);
+
+}
+
+.grid-3{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-6);
+
+}
+
+.grid-4{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:var(--space-5);
+
+}
+
+/* =====================================================
+   ALIGNMENT
+===================================================== */
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.mx-auto{
+
+    margin-inline:auto;
+
+}
+
+.w-100{
+
+    width:100%;
+
+}
+
+.h-100{
+
+    height:100%;
+
+}
+
+/* =====================================================
+   SPACING
+===================================================== */
+
+.mt-1{margin-top:var(--space-1);}
+.mt-2{margin-top:var(--space-2);}
+.mt-3{margin-top:var(--space-3);}
+.mt-4{margin-top:var(--space-4);}
+.mt-5{margin-top:var(--space-5);}
+.mt-6{margin-top:var(--space-6);}
+.mt-7{margin-top:var(--space-7);}
+.mt-8{margin-top:var(--space-8);}
+.mt-9{margin-top:var(--space-9);}
+
+.mb-1{margin-bottom:var(--space-1);}
+.mb-2{margin-bottom:var(--space-2);}
+.mb-3{margin-bottom:var(--space-3);}
+.mb-4{margin-bottom:var(--space-4);}
+.mb-5{margin-bottom:var(--space-5);}
+.mb-6{margin-bottom:var(--space-6);}
+.mb-7{margin-bottom:var(--space-7);}
+.mb-8{margin-bottom:var(--space-8);}
+.mb-9{margin-bottom:var(--space-9);}
+
+/* =====================================================
+   GLASS CARD
+===================================================== */
+
+.glass{
+
+    background:var(--glass-bg);
+
+    backdrop-filter:blur(var(--glass-blur));
+
+    border:1px solid var(--glass-border);
+
+    border-radius:var(--radius-lg);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.card{
+
+    background:var(--color-surface);
+
+    border-radius:var(--radius-lg);
+
+    padding:var(--card-padding);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+/* =====================================================
+   DIVIDER
+===================================================== */
+
+.divider{
+
+    width:100px;
+
+    height:3px;
+
+    margin:30px auto;
+
+    border-radius:100px;
+
+    background:var(--color-primary);
+
+}
+
+/* =====================================================
+   HIDE
+===================================================== */
+
+.hidden{
+
+    display:none;
+
+}
+
+.invisible{
+
+    opacity:0;
+
+}
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.image-cover{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.image-contain{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:1024px){
+
+.grid-4{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.grid-3{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+section{
+
+padding:80px 0;
+
+}
+
+.grid-2,
+.grid-3,
+.grid-4{
+
+grid-template-columns:1fr;
+
+}
+
+.container,
+.container-sm,
+.container-xl{
+
+width:92%;
+
+}
+
+}
