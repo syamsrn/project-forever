@@ -1,0 +1,370 @@
+/* =====================================================
+   Project Forever
+   File: sections.css
+   Version: 0.1.0
+   Story Chapters
+===================================================== */
+
+/* =====================================================
+   CHAPTER 01
+   LOADER
+===================================================== */
+
+#loader{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:9999;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-direction:column;
+
+    background:linear-gradient(
+        135deg,
+        #F7F3EF,
+        #FDFCFB
+    );
+
+}
+
+.loader-logo{
+
+    font-size:5rem;
+
+    color:var(--color-primary);
+
+}
+
+.loader-text{
+
+    margin-top:24px;
+
+    letter-spacing:.4rem;
+
+    text-transform:uppercase;
+
+}
+
+
+/* =====================================================
+   CHAPTER 02
+   INTRO QUESTION
+===================================================== */
+
+#question{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    background:var(--color-background);
+
+}
+
+.question-box{
+
+    max-width:720px;
+
+}
+
+
+/* =====================================================
+   CHAPTER 03
+   HERO
+===================================================== */
+
+#hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+    height:100vh;
+
+}
+
+.hero-image{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        rgba(0,0,0,.15),
+        rgba(0,0,0,.45)
+    );
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+
+/* =====================================================
+   CHAPTER 04
+   COUNT UP
+===================================================== */
+
+#countup{
+
+    background:white;
+
+}
+
+.timer-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:32px;
+
+}
+
+.timer-box{
+
+    padding:40px;
+
+    border-radius:24px;
+
+    background:white;
+
+    text-align:center;
+
+    box-shadow:var(--shadow-md);
+
+}
+
+
+/* =====================================================
+   CHAPTER 05
+   TIMELINE
+===================================================== */
+
+#timeline{
+
+    background:#FCFAF8;
+
+}
+
+.timeline{
+
+    position:relative;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    top:0;
+
+    width:4px;
+
+    height:100%;
+
+    background:var(--color-primary);
+
+}
+
+
+/* =====================================================
+   CHAPTER 06
+   JOURNEY
+===================================================== */
+
+#journey{
+
+    background:white;
+
+}
+
+.map-container{
+
+    margin-top:80px;
+
+}
+
+
+/* =====================================================
+   CHAPTER 07
+   TRIPS
+===================================================== */
+
+#trips{
+
+    background:#FDFCFB;
+
+}
+
+.trip-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:40px;
+
+}
+
+
+/* =====================================================
+   CHAPTER 08
+   GALLERY
+===================================================== */
+
+#gallery{
+
+    overflow:hidden;
+
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+
+/* =====================================================
+   CHAPTER 09
+   LETTER
+===================================================== */
+
+#letter{
+
+    background:linear-gradient(
+        180deg,
+        #fff,
+        #F7F3EF
+    );
+
+}
+
+.letter{
+
+    max-width:900px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:80px;
+
+    border-radius:36px;
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+
+/* =====================================================
+   CHAPTER 10
+   HIDDEN MOON
+===================================================== */
+
+#moon{
+
+    position:relative;
+
+    min-height:100vh;
+
+    background:#0d1020;
+
+    color:white;
+
+}
+
+.moon{
+
+    position:absolute;
+
+    top:80px;
+
+    right:120px;
+
+    width:140px;
+
+    height:140px;
+
+    border-radius:50%;
+
+    background:white;
+
+    cursor:pointer;
+
+}
+
+
+/* =====================================================
+   CHAPTER 11
+   FINALE
+===================================================== */
+
+#ending{
+
+    background:black;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+.final-text{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
