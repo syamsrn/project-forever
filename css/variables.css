@@ -1,0 +1,208 @@
+/* =====================================================
+   Project Forever
+   File: variables.css
+   Version: 0.1.0
+   ===================================================== */
+
+:root{
+
+/* =====================================================
+   COLORS
+===================================================== */
+
+--color-background:#F7F3EF;
+--color-surface:#FFFFFF;
+--color-surface-alt:#FCFAF8;
+
+--color-text:#2A2A2A;
+--color-text-light:#6E6E73;
+--color-text-white:#FFFFFF;
+
+--color-primary:#C98A63;
+--color-primary-dark:#B67753;
+--color-primary-light:#E7B9A8;
+
+--color-border:#ECE6E2;
+
+--color-success:#4CAF50;
+--color-warning:#F4B400;
+--color-error:#E53935;
+
+
+/* =====================================================
+   GLASS
+===================================================== */
+
+--glass-bg:rgba(255,255,255,.70);
+
+--glass-border:rgba(255,255,255,.35);
+
+--glass-blur:22px;
+
+
+/* =====================================================
+   SHADOWS
+===================================================== */
+
+--shadow-xs:0 2px 8px rgba(0,0,0,.04);
+
+--shadow-sm:0 5px 18px rgba(0,0,0,.06);
+
+--shadow-md:0 12px 35px rgba(0,0,0,.08);
+
+--shadow-lg:0 20px 60px rgba(0,0,0,.12);
+
+--shadow-xl:0 40px 120px rgba(0,0,0,.18);
+
+
+/* =====================================================
+   BORDER RADIUS
+===================================================== */
+
+--radius-xs:6px;
+--radius-sm:12px;
+--radius-md:18px;
+--radius-lg:28px;
+--radius-xl:40px;
+--radius-pill:999px;
+
+
+/* =====================================================
+   SPACING SYSTEM
+===================================================== */
+
+--space-1:4px;
+--space-2:8px;
+--space-3:12px;
+--space-4:16px;
+--space-5:24px;
+--space-6:32px;
+--space-7:48px;
+--space-8:64px;
+--space-9:96px;
+--space-10:128px;
+
+
+/* =====================================================
+   CONTAINERS
+===================================================== */
+
+--container-sm:720px;
+--container-md:960px;
+--container-lg:1200px;
+--container-xl:1400px;
+
+
+/* =====================================================
+   TYPOGRAPHY
+===================================================== */
+
+--font-heading:"Playfair Display",serif;
+
+--font-body:"Poppins",sans-serif;
+
+--font-number:"Space Grotesk",sans-serif;
+
+--font-size-xs:.75rem;
+--font-size-sm:.875rem;
+--font-size-md:1rem;
+--font-size-lg:1.25rem;
+--font-size-xl:1.5rem;
+--font-size-2xl:2rem;
+--font-size-3xl:3rem;
+--font-size-4xl:4rem;
+--font-size-5xl:5rem;
+
+
+/* =====================================================
+   FONT WEIGHTS
+===================================================== */
+
+--weight-light:300;
+
+--weight-regular:400;
+
+--weight-medium:500;
+
+--weight-semibold:600;
+
+--weight-bold:700;
+
+--weight-black:800;
+
+
+/* =====================================================
+   LINE HEIGHT
+===================================================== */
+
+--line-tight:1.1;
+
+--line-normal:1.6;
+
+--line-loose:1.9;
+
+
+/* =====================================================
+   TRANSITIONS
+===================================================== */
+
+--transition-fast:.25s ease;
+
+--transition-normal:.45s ease;
+
+--transition-slow:.8s ease;
+
+
+/* =====================================================
+   Z INDEX
+===================================================== */
+
+--z-base:1;
+
+--z-navbar:100;
+
+--z-overlay:900;
+
+--z-loader:9999;
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+--hero-height:100vh;
+
+--hero-overlay:rgba(0,0,0,.25);
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+--button-height:58px;
+
+--button-padding:28px;
+
+--button-radius:999px;
+
+
+/* =====================================================
+   CARDS
+===================================================== */
+
+--card-padding:32px;
+
+--card-radius:24px;
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+--mobile:768px;
+
+--tablet:1024px;
+
+--desktop:1280px;
+
+}
