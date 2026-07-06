@@ -1,0 +1,282 @@
+/* =====================================================
+   Project Forever
+   File: typography.css
+   Version: 0.1.0
+===================================================== */
+
+/* =====================================================
+   GOOGLE FONTS
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body{
+
+    font-family:var(--font-body);
+
+    font-size:var(--font-size-md);
+
+    color:var(--color-text);
+
+    background:var(--color-background);
+
+    line-height:var(--line-normal);
+
+}
+
+/* =====================================================
+   HEADINGS
+===================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    font-family:var(--font-heading);
+
+    font-weight:var(--weight-bold);
+
+    color:var(--color-text);
+
+    line-height:var(--line-tight);
+
+    letter-spacing:-0.03em;
+
+}
+
+/* =====================================================
+   HEADING SCALE
+===================================================== */
+
+h1{
+
+    font-size:clamp(3rem,7vw,6rem);
+
+}
+
+h2{
+
+    font-size:clamp(2.3rem,5vw,4rem);
+
+}
+
+h3{
+
+    font-size:clamp(1.8rem,4vw,3rem);
+
+}
+
+h4{
+
+    font-size:clamp(1.4rem,3vw,2rem);
+
+}
+
+h5{
+
+    font-size:1.2rem;
+
+}
+
+h6{
+
+    font-size:1rem;
+
+}
+
+/* =====================================================
+   PARAGRAPHS
+===================================================== */
+
+p{
+
+    font-size:1rem;
+
+    color:var(--color-text-light);
+
+    line-height:1.9;
+
+    max-width:720px;
+
+}
+
+/* =====================================================
+   LINKS
+===================================================== */
+
+a{
+
+    transition:var(--transition-fast);
+
+}
+
+a:hover{
+
+    color:var(--color-primary);
+
+}
+
+/* =====================================================
+   NUMBERS
+===================================================== */
+
+.number{
+
+    font-family:var(--font-number);
+
+    font-weight:700;
+
+}
+
+/* =====================================================
+   SMALL TEXT
+===================================================== */
+
+.small-text{
+
+    font-size:.85rem;
+
+    letter-spacing:.18em;
+
+    text-transform:uppercase;
+
+    color:var(--color-primary);
+
+}
+
+/* =====================================================
+   SECTION TITLE
+===================================================== */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:var(--space-8);
+
+}
+
+.section-title h2{
+
+    margin-bottom:20px;
+
+}
+
+.section-title p{
+
+    margin:auto;
+
+}
+
+/* =====================================================
+   HERO TITLE
+===================================================== */
+
+.hero-title{
+
+    font-size:clamp(4rem,9vw,8rem);
+
+    color:white;
+
+    text-shadow:0 15px 40px rgba(0,0,0,.25);
+
+}
+
+.hero-subtitle{
+
+    margin-top:24px;
+
+    font-size:1.4rem;
+
+    color:white;
+
+    opacity:.95;
+
+}
+
+/* =====================================================
+   QUOTE
+===================================================== */
+
+.quote{
+
+    font-family:var(--font-heading);
+
+    font-style:italic;
+
+    font-size:clamp(2rem,5vw,3.5rem);
+
+    text-align:center;
+
+    line-height:1.4;
+
+}
+
+/* =====================================================
+   SIGNATURE
+===================================================== */
+
+.signature{
+
+    font-family:var(--font-heading);
+
+    font-size:2rem;
+
+    color:var(--color-primary);
+
+    text-align:right;
+
+}
+
+/* =====================================================
+   TIMER
+===================================================== */
+
+.timer-number{
+
+    font-family:var(--font-number);
+
+    font-size:clamp(2.5rem,6vw,5rem);
+
+    font-weight:700;
+
+}
+
+.timer-label{
+
+    margin-top:10px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.12em;
+
+    font-size:.85rem;
+
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:768px){
+
+    p{
+
+        font-size:.95rem;
+
+    }
+
+    .hero-subtitle{
+
+        font-size:1.05rem;
+
+    }
+
+}
