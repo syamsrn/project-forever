@@ -1,140 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>One Glance • Jo ❤️ Syam</title>
 
-    <meta name="description"
-          content="Every beautiful story begins with one glance.">
+    <meta
+      name="description"
+      content="Every beautiful story begins with one glance."
+    />
 
     <!-- Favicon -->
-    <link rel="icon"
-          href="assets/icons/favicon.png">
+    <link rel="icon" href="assets/icons/favicon.png" />
 
     <!-- CSS -->
-    <link rel="stylesheet"
-          href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- GSAP -->
-    <script defer
-        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
+    ></script>
 
-    <script defer
-        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"
+    ></script>
+  </head>
 
-</head>
+  <body>
+    <div id="app">
+      <!-- ================================================= -->
+      <!-- GLOBAL UI -->
+      <!-- ================================================= -->
 
-<body>
+      <!-- Ambient Background -->
 
-<div id="app">
-<!-- ================================================= -->
-<!-- CHAPTER 01 : CINEMATIC INTRO -->
-<!-- ================================================= -->
+      <div id="ambient-background">
+        <div class="ambient ambient-1"></div>
 
-<section id="intro">
+        <div class="ambient ambient-2"></div>
 
-</section>
+        <div class="ambient ambient-3"></div>
+      </div>
 
+      <!-- Cursor Glow -->
 
-<!-- ================================================= -->
-<!-- CHAPTER 02 : THE QUESTION -->
-<!-- ================================================= -->
+      <div id="cursor-glow"></div>
 
-<section id="question">
+      <!-- Story Progress -->
 
-</section>
+      <nav id="story-progress">
+        <div class="progress-line">
+          <div class="progress-fill"></div>
+        </div>
 
+        <ul>
+          <li data-target="intro"></li>
+          <li data-target="question"></li>
+          <li data-target="hero"></li>
+          <li data-target="countup"></li>
+          <li data-target="timeline"></li>
+          <li data-target="journey"></li>
+          <li data-target="trips"></li>
+          <li data-target="gallery"></li>
+          <li data-target="letter"></li>
+          <li data-target="moon"></li>
+          <li data-target="ending"></li>
+        </ul>
+      </nav>
 
-<!-- ================================================= -->
-<!-- CHAPTER 03 : HERO -->
-<!-- ================================================= -->
+      <!-- ================================================= -->
+      <!-- CHAPTER 01 : CINEMATIC INTRO -->
+      <!-- ================================================= -->
 
-<header id="hero">
+      <section id="intro"></section>
 
-</header>
+      <!-- ================================================= -->
+      <!-- CHAPTER 02 : THE QUESTION -->
+      <!-- ================================================= -->
 
+      <section id="question"></section>
 
-<!-- ================================================= -->
-<!-- CHAPTER 04 : COUNT UP -->
-<!-- ================================================= -->
+      <!-- ================================================= -->
+      <!-- CHAPTER 03 : HERO -->
+      <!-- ================================================= -->
 
-<section id="countup">
+      <header id="hero"></header>
 
-</section>
+      <!-- ================================================= -->
+      <!-- CHAPTER 04 : COUNT UP -->
+      <!-- ================================================= -->
 
+      <section id="countup"></section>
 
-<!-- ================================================= -->
-<!-- CHAPTER 05 : OUR STORY -->
-<!-- ================================================= -->
+      <!-- ================================================= -->
+      <!-- CHAPTER 05 : OUR STORY -->
+      <!-- ================================================= -->
 
-<section id="timeline">
+      <section id="timeline"></section>
 
-</section>
+      <!-- ================================================= -->
+      <!-- CHAPTER 06 : OUR JOURNEY -->
+      <!-- ================================================= -->
 
+      <section id="journey"></section>
 
-<!-- ================================================= -->
-<!-- CHAPTER 06 : OUR JOURNEY -->
-<!-- ================================================= -->
+      <!-- ================================================= -->
+      <!-- CHAPTER 07 : EVERY PLACE WE VISITED -->
+      <!-- ================================================= -->
 
-<section id="journey">
+      <section id="trips"></section>
 
-</section>
+      <!-- ================================================= -->
+      <!-- CHAPTER 08 : OUR MEMORIES -->
+      <!-- ================================================= -->
 
+      <section id="gallery"></section>
 
-<!-- ================================================= -->
-<!-- CHAPTER 07 : EVERY PLACE WE VISITED -->
-<!-- ================================================= -->
+      <!-- ================================================= -->
+      <!-- CHAPTER 09 : MY LETTER -->
+      <!-- ================================================= -->
 
-<section id="trips">
+      <section id="letter"></section>
 
-</section>
+      <!-- ================================================= -->
+      <!-- CHAPTER 10 : SECRET MOON -->
+      <!-- ================================================= -->
 
+      <section id="moon"></section>
 
-<!-- ================================================= -->
-<!-- CHAPTER 08 : OUR MEMORIES -->
-<!-- ================================================= -->
+      <!-- ================================================= -->
+      <!-- CHAPTER 11 : FINALE -->
+      <!-- ================================================= -->
 
-<section id="gallery">
+      <footer id="ending"></footer>
+    </div>
 
-</section>
-
-
-<!-- ================================================= -->
-<!-- CHAPTER 09 : MY LETTER -->
-<!-- ================================================= -->
-
-<section id="letter">
-
-</section>
-
-
-<!-- ================================================= -->
-<!-- CHAPTER 10 : SECRET MOON -->
-<!-- ================================================= -->
-
-<section id="moon">
-
-</section>
-
-
-<!-- ================================================= -->
-<!-- CHAPTER 11 : FINALE -->
-<!-- ================================================= -->
-
-<footer id="ending">
-
-</footer>
-</div>
-
-<script src="assets/js/app.js"
-        defer></script>
-
-</body>
-
+    <script src="assets/js/app.js" defer></script>
+  </body>
 </html>

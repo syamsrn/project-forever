@@ -6,6 +6,191 @@
 ===================================================== */
 
 /* =====================================================
+   GLOBAL UI
+===================================================== */
+
+#ambient-background{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:-2;
+
+}
+
+.ambient{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(140px);
+
+    opacity:.30;
+
+    animation:float 14s ease-in-out infinite;
+
+}
+
+.ambient-1{
+
+    width:520px;
+
+    height:520px;
+
+    background:#F2D8C9;
+
+    top:-180px;
+
+    left:-120px;
+
+}
+
+.ambient-2{
+
+    width:420px;
+
+    height:420px;
+
+    background:#FFE7C6;
+
+    right:-100px;
+
+    top:180px;
+
+    animation-delay:2s;
+
+}
+
+.ambient-3{
+
+    width:620px;
+
+    height:620px;
+
+    background:#F5EBDD;
+
+    bottom:-220px;
+
+    left:40%;
+
+    animation-delay:4s;
+
+}
+
+
+/* =====================================================
+   CURSOR GLOW
+===================================================== */
+
+#cursor-glow{
+
+    position:fixed;
+
+    width:28px;
+
+    height:28px;
+
+    border-radius:50%;
+
+    background:rgba(201,138,99,.22);
+
+    filter:blur(10px);
+
+    pointer-events:none;
+
+    z-index:999;
+
+}
+
+
+/* =====================================================
+   STORY PROGRESS
+===================================================== */
+
+#story-progress{
+
+    position:fixed;
+
+    left:40px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    z-index:500;
+
+}
+
+.progress-line{
+
+    position:absolute;
+
+    left:9px;
+
+    top:0;
+
+    width:2px;
+
+    height:100%;
+
+    background:#DDD;
+
+}
+
+.progress-fill{
+
+    width:100%;
+
+    height:0;
+
+    background:var(--color-primary);
+
+}
+
+#story-progress ul{
+
+    list-style:none;
+
+}
+
+#story-progress li{
+
+    width:20px;
+
+    height:20px;
+
+    margin:22px 0;
+
+    border-radius:50%;
+
+    border:2px solid var(--color-primary);
+
+    background:white;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+#story-progress li.active{
+
+    background:var(--color-primary);
+
+    transform:scale(1.25);
+
+}
+
+
+
+
+/* =====================================================
    CHAPTER 01
    LOADER
 ===================================================== */
