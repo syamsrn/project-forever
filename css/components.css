@@ -1,0 +1,407 @@
+/* =====================================================
+   Project Forever
+   File: components.css
+   Version: 0.1.0
+===================================================== */
+
+/* =====================================================
+   PRIMARY BUTTON
+===================================================== */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    min-height:58px;
+
+    padding:0 34px;
+
+    border-radius:var(--radius-pill);
+
+    background:var(--color-primary);
+
+    color:#fff;
+
+    font-weight:600;
+
+    transition:var(--transition-normal);
+
+    box-shadow:var(--shadow-md);
+
+    cursor:pointer;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+    background:var(--color-primary-dark);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.btn:active{
+
+    transform:scale(.97);
+
+}
+
+/* =====================================================
+   GLASS BUTTON
+===================================================== */
+
+.btn-glass{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:58px;
+
+    padding:0 32px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.20);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.35);
+
+    color:#fff;
+
+    transition:var(--transition-normal);
+
+}
+
+.btn-glass:hover{
+
+    background:rgba(255,255,255,.32);
+
+    transform:translateY(-4px);
+
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.card{
+
+    background:var(--color-surface);
+
+    border-radius:28px;
+
+    padding:36px;
+
+    box-shadow:var(--shadow-md);
+
+    transition:var(--transition-normal);
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-xl);
+
+}
+
+/* =====================================================
+   GLASS CARD
+===================================================== */
+
+.glass-card{
+
+    background:rgba(255,255,255,.72);
+
+    backdrop-filter:blur(22px);
+
+    border:1px solid rgba(255,255,255,.35);
+
+    border-radius:32px;
+
+    padding:36px;
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+/* =====================================================
+   INPUT
+===================================================== */
+
+.input{
+
+    width:100%;
+
+    height:60px;
+
+    border-radius:16px;
+
+    padding:0 22px;
+
+    border:1px solid var(--color-border);
+
+    background:#fff;
+
+    transition:.3s;
+
+}
+
+.input:focus{
+
+    border-color:var(--color-primary);
+
+    box-shadow:0 0 0 4px rgba(201,138,99,.18);
+
+}
+
+/* =====================================================
+   SECTION BADGE
+===================================================== */
+
+.badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:rgba(201,138,99,.12);
+
+    color:var(--color-primary);
+
+    font-size:.85rem;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+
+}
+
+/* =====================================================
+   IMAGE FRAME
+===================================================== */
+
+.photo-frame{
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.photo-frame img{
+
+    transition:1s;
+
+}
+
+.photo-frame:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* =====================================================
+   TIMELINE CARD
+===================================================== */
+
+.timeline-card{
+
+    position:relative;
+
+    padding:40px;
+
+    border-radius:28px;
+
+    background:#fff;
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.timeline-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-14px;
+
+    top:42px;
+
+    width:28px;
+
+    height:28px;
+
+    border-radius:50%;
+
+    background:var(--color-primary);
+
+}
+
+/* =====================================================
+   SCROLL INDICATOR
+===================================================== */
+
+.scroll-indicator{
+
+    position:absolute;
+
+    bottom:40px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:32px;
+
+    height:56px;
+
+    border:2px solid rgba(255,255,255,.8);
+
+    border-radius:100px;
+
+}
+
+.scroll-indicator::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:8px;
+
+    height:8px;
+
+    background:white;
+
+    border-radius:50%;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    animation:scrollDown 2s infinite;
+
+}
+
+/* =====================================================
+   LOADER
+===================================================== */
+
+.loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:var(--color-background);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+.loader-heart{
+
+    font-size:72px;
+
+    animation:heartbeat 1.2s infinite;
+
+}
+
+/* =====================================================
+   FLOATING
+===================================================== */
+
+.float{
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+/* =====================================================
+   BLUR BACKGROUND
+===================================================== */
+
+.blur-bg{
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    border-radius:50%;
+
+    background:rgba(201,138,99,.18);
+
+    filter:blur(120px);
+
+    pointer-events:none;
+
+}
+
+/* =====================================================
+   HOVER GLOW
+===================================================== */
+
+.glow:hover{
+
+    box-shadow:
+
+    0 0 20px rgba(201,138,99,.3),
+
+    0 0 40px rgba(201,138,99,.2);
+
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:768px){
+
+.card,
+
+.glass-card,
+
+.timeline-card{
+
+padding:24px;
+
+}
+
+.btn{
+
+width:100%;
+
+}
+
+}
